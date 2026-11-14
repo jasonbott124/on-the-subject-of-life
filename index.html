@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>On the Subject of Life* — a long-form podcast by Jason Bott</title>
+<meta name="description" content="On the Subject of Life* (formerly Heights of Humanity) — long-form conversations with scientists and experts on geology, glaciology, planetary science, cosmology, AI and life. Hosted by Jason Bott.">
+<meta property="og:title" content="On the Subject of Life*">
+<meta property="og:description" content="Long-form conversations with interesting people, hosted by Jason Bott.">
+<meta property="og:image" content="assets/img/podcast-chalkboard.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;1,300&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#top">On the Subject of Life<span class="star">*</span></a>
+  <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  <nav id="menu">
+    <a href="#episodes">Episodes</a>
+    <a href="#about">About</a>
+    <a href="#listen">Listen</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+    <span class="socials">
+      <a href="https://www.instagram.com/heightsofhumanitypodcast/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 8.2a3.2 3.2 0 1 1 0-6.4 3.2 3.2 0 0 1 0 6.4zM17.3 5.5a1.2 1.2 0 1 0 0 2.4 1.2 1.2 0 0 0 0-2.4zM12 2c-2.7 0-3 0-4.1.1-1 0-1.8.2-2.4.5-.7.3-1.2.6-1.8 1.2S2.8 5 2.6 5.6c-.3.6-.4 1.4-.5 2.4C2 9 2 9.3 2 12s0 3 .1 4.1c0 1 .2 1.8.5 2.4.3.7.6 1.2 1.2 1.8s1.1.9 1.8 1.2c.6.3 1.4.4 2.4.5 1 .1 1.4.1 4.1.1s3 0 4.1-.1c1 0 1.8-.2 2.4-.5.7-.3 1.2-.6 1.8-1.2s.9-1.1 1.2-1.8c.3-.6.4-1.4.5-2.4.1-1 .1-1.4.1-4.1s0-3-.1-4.1c0-1-.2-1.8-.5-2.4-.3-.7-.6-1.2-1.2-1.8S19 2.8 18.4 2.6c-.6-.3-1.4-.4-2.4-.5C15 2 14.7 2 12 2zm0 1.8c2.7 0 3 0 4 .1.9 0 1.5.2 1.8.3.5.2.8.4 1.1.7.4.4.6.7.8 1.1.1.3.3.9.3 1.8.1 1.1.1 1.4.1 4.1s0 3-.1 4c0 .9-.2 1.5-.3 1.8-.2.5-.4.8-.8 1.1-.3.4-.7.6-1.1.8-.3.1-.9.3-1.8.3-1 .1-1.3.1-4 .1s-3 0-4-.1c-.9 0-1.5-.2-1.8-.3-.5-.2-.8-.4-1.1-.8-.4-.3-.6-.7-.8-1.1-.1-.3-.3-.9-.3-1.8-.1-1-.1-1.3-.1-4s0-3 .1-4c0-.9.2-1.5.3-1.8.2-.5.4-.8.8-1.1.3-.4.7-.6 1.1-.8.3-.1.9-.3 1.8-.3 1-.1 1.3-.1 4-.1z"/></svg></a>
+      <a href="https://twitter.com/HofH_Podcast" target="_blank" rel="noopener" aria-label="X / Twitter"><svg viewBox="0 0 24 24"><path d="M17.8 3h3.1l-6.8 7.7 8 10.3h-6.2l-4.9-6.3L5.4 21H2.3l7.2-8.3L1.8 3h6.4l4.4 5.8L17.8 3zm-1.1 16.2h1.7L7.4 4.7H5.5l11.2 14.5z"/></svg></a>
+      <a href="https://www.youtube.com/@HeightsofHumanityPodcast" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.7 15V9l5.8 3-5.8 3z"/></svg></a>
+      <a href="https://open.spotify.com/show/4ZOc4LNAlxK5HLj0Y15LnX" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><path d="M12 1.5a10.5 10.5 0 1 0 0 21 10.5 10.5 0 0 0 0-21zm4.8 15.2a.7.7 0 0 1-.9.2c-2.5-1.5-5.6-1.8-9.3-1a.7.7 0 1 1-.3-1.3c4-.9 7.5-.5 10.3 1.2.3.2.4.6.2.9zm1.3-2.9a.8.8 0 0 1-1.1.3c-2.8-1.7-7.1-2.2-10.5-1.2a.8.8 0 1 1-.5-1.6c3.8-1.1 8.6-.6 11.8 1.4.4.2.5.7.3 1.1zm.1-3c-3.4-2-8.9-2.2-12.1-1.2a1 1 0 1 1-.6-1.9c3.7-1.1 9.8-.9 13.7 1.4a1 1 0 0 1-1 1.7z"/></svg></a>
+    </span>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="kicker">A long-form podcast · Est. 2023</p>
+      <h1>Discussions on the Subject of… <em>Life*</em></h1>
+      <p class="lede">Interesting conversations with interesting people. Scientists and experts on their work, their research, what drives them, and what they've learned along the way.</p>
+      <div class="btns">
+        <a class="btn" href="#episodes">Browse episodes</a>
+        <a class="btn ghost" href="#listen">Listen anywhere</a>
+      </div>
+      <div class="stats">
+        <div><b>19</b><span>Episodes</span></div>
+        <div><b>~35</b><span>Hours of talk</span></div>
+        <div><b>1–2.5h</b><span>Per conversation</span></div>
+      </div>
+    </div>
+    <div>
+      <p class="kicker">Most recent episode</p>
+      <div class="video" id="latest" style="background-image:url(https://i.ytimg.com/vi/Vu8jozAXkF4/hqdefault.jpg)">
+        <button type="button" aria-label="Play: Pleistocene Ecology with John Moretti">
+          <span class="play"></span>
+          <span class="video-cap">Ep. 19 · Feb 2025<b>Pleistocene Ecology · John Moretti</b></span>
+        </button>
+      </div>
+      <div class="btns" style="margin-top:14px">
+        <a class="btn small ghost" href="https://open.spotify.com/episode/0REvbDj6LpEkOq13kIf2CZ" target="_blank" rel="noopener">Spotify</a>
+        <a class="btn small ghost" href="https://podcasts.apple.com/us/podcast/pleistocene-ecology-dr-john-moretti/id1717825318?i=1000690438914" target="_blank" rel="noopener">Apple Podcasts</a>
+        <a class="btn small ghost" href="https://www.youtube.com/watch?v=Vu8jozAXkF4" target="_blank" rel="noopener">YouTube</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPISODES -->
+<section class="light" id="episodes">
+  <div class="wrap">
+    <h2 class="section-title"><span>01</span>Episodes</h2>
+    <div class="filters" role="toolbar" aria-label="Filter episodes">
+      <button aria-pressed="true" data-tag="All">All</button>
+      <button aria-pressed="false" data-tag="Earth">Earth</button>
+      <button aria-pressed="false" data-tag="Ice & Ocean">Ice &amp; Ocean</button>
+      <button aria-pressed="false" data-tag="Space">Space</button>
+      <button aria-pressed="false" data-tag="Computing & AI">Computing &amp; AI</button>
+      <button aria-pressed="false" data-tag="Mindset">Mindset</button>
+      <input class="search" type="search" placeholder="Search guests or topics…" aria-label="Search episodes">
+    </div>
+    <ol class="ep-list" id="ep-list"></ol>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <h2 class="section-title"><span>02</span>About</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="label" style="color:var(--moss)">What is On the Subject of Life*?</p>
+        <p>A long-form podcast featuring guests from every field and background, talking about their work, their research, their motivations, and the advice they'd give.</p>
+        <p>The goal is a library of thought-provoking conversations: knowledge that helps people succeed and feel fulfilled, and a spotlight on inspiring research and ideas that don't get the attention they deserve.</p>
+        <p class="plain">The show launched in 2023 as <em>Heights of Humanity</em>; you'll still find it under that name on some platforms. It has no affiliation with the University of Texas or UTIG. It's simply an effort to make quality conversations with real experts free for anyone.</p>
+        <h3>About Jason</h3>
+        <p class="plain">Hi, I'm Jason, a particularly well-traveled geophysics undergrad at UT Austin and a research associate at the University of Texas Institute for Geophysics, deeply curious about geology, glaciology, wildlife conservation, history, language… all of it, frankly, just Life. This podcast is my attempt to share the discussions I have about Life and its many facets, and to keep an archive of the people and topics I find fascinating, however niche.</p>
+        <div class="btns" style="margin-top:22px">
+          <a class="btn moss" href="https://jasonbott124.github.io" target="_blank" rel="noopener">Jason's research site →</a>
+          <a class="btn ghost" href="https://ig.utexas.edu/students/jason-bott/" target="_blank" rel="noopener">UTIG profile</a>
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="wide" src="assets/img/podcast-chalkboard.jpg" alt="Jason interviewing a guest at a table with microphones in front of a chalkboard" loading="lazy">
+        <img src="assets/img/podcast-fossils-guest.jpg" alt="A guest speaking into a microphone in front of shelves of fossil specimens" loading="lazy">
+        <img src="assets/img/podcast-fossils-host.jpg" alt="Jason hosting an episode recorded among fossil collections" loading="lazy">
+        <img class="wide" src="assets/img/podcast-window.jpg" alt="Jason and a guest recording by a window overlooking the UT Austin campus" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRAISE -->
+<section class="light" id="praise">
+  <div class="wrap">
+    <h2 class="section-title"><span>03</span>From the guests</h2>
+    <div class="quotes">
+      <figure><blockquote>“Bott went beyond facts and figures, seeking motivations and bigger trends.”</blockquote><figcaption>Dr. Michael Pyrcz</figcaption></figure>
+      <figure><blockquote>“Jason really impressed me because he had really researched my research… I even at one point thought, ‘Did you read my PhD thesis?’”</blockquote><figcaption>Dr. Deirdre Shoemaker</figcaption></figure>
+      <figure><blockquote>“If he would have told me he was a Moody journalism student, I would have believed that.”</blockquote><figcaption>Dr. Michael Pyrcz</figcaption></figure>
+    </div>
+    <p class="press">Featured in <a href="https://thedailytexan.com/2024/06/28/ut-student-hosts-video-podcast-featuring-conversations-with-expert-guests/" target="_blank" rel="noopener"><em>The Daily Texan</em></a>, June 2024.</p>
+  </div>
+</section>
+
+<!-- LISTEN -->
+<section id="listen">
+  <div class="wrap">
+    <h2 class="section-title"><span>04</span>Listen &amp; watch</h2>
+    <div class="platforms">
+      <a href="https://www.youtube.com/@HeightsofHumanityPodcast" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://open.spotify.com/show/4ZOc4LNAlxK5HLj0Y15LnX" target="_blank" rel="noopener">Spotify</a>
+      <a href="https://podcasts.apple.com/us/podcast/id1717825318" target="_blank" rel="noopener">Apple Podcasts</a>
+      <a href="https://music.amazon.com/podcasts/913b789a-6b06-446a-bbca-3526c243b892" target="_blank" rel="noopener">Amazon Music</a>
+      <a href="https://overcast.fm/+BFOyA3FcQ0" target="_blank" rel="noopener">Overcast</a>
+      <a href="https://castbox.fm/channel/Heights-of-Humanity-id6253020" target="_blank" rel="noopener">Castbox</a>
+      <a href="https://podcastindex.org/podcast/6695728" target="_blank" rel="noopener">Podcast Index</a>
+      <a href="https://anchor.fm/s/ebd6a240/podcast/rss" target="_blank" rel="noopener">RSS feed</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="light" id="faq">
+  <div class="wrap">
+    <h2 class="section-title"><span>05</span>FAQ</h2>
+    <div class="faq">
+      <details open><summary>Where can I find the podcast?</summary><p>On YouTube, Spotify, Apple Podcasts, Amazon Music and most other podcast apps. See <a href="#listen">Listen &amp; watch</a> for the full list.</p></details>
+      <details><summary>What format can I expect?</summary><p>Long-form conversations, usually one to two and a half hours, released in both audio and video.</p></details>
+      <details><summary>Where can I find past episodes?</summary><p>Every episode is in the <a href="#episodes">Episodes</a> section above. Filter by topic or search for a guest.</p></details>
+      <details><summary>How do I recommend a guest?</summary><p>Send a note to <a href="mailto:heightsofhumanity@gmail.com?subject=Guest%20recommendation">heightsofhumanity@gmail.com</a> with who they are and why they'd make a great conversation.</p></details>
+      <details><summary>Where can I send feedback?</summary><p>Constructive feedback and criticism are always welcome at <a href="mailto:heightsofhumanity@gmail.com?subject=Feedback">heightsofhumanity@gmail.com</a>. Nonconstructive feedback, threats, or hateful speech won't be reviewed.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="kicker">Contact</p>
+      <h2>Have a guest in mind, or something to say?</h2>
+      <p>Feedback, guest suggestions, comments, questions, concerns, and more are all very much appreciated.</p>
+      <a class="mail" href="mailto:heightsofhumanity@gmail.com">heightsofhumanity@gmail.com</a>
+    </div>
+    <div class="btns">
+      <a class="btn" href="mailto:heightsofhumanity@gmail.com?subject=Guest%20recommendation&body=Guest%20name%3A%0AWhat%20they%20work%20on%3A%0AWhy%20they'd%20be%20a%20great%20conversation%3A%0ALinks%3A">Suggest a guest</a>
+      <a class="btn ghost" href="mailto:heightsofhumanity@gmail.com?subject=Feedback">Send feedback</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>Copyright <span id="yr">2026</span> © Jason Bott · On the Subject of Life<span class="star">*</span></span>
+    <nav><a href="#episodes">Episodes</a><a href="#about">About</a><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="https://jasonbott124.github.io" target="_blank" rel="noopener">jasonbott124.github.io</a></nav>
+  </div>
+</footer>
+
+<script>
+/* ===== Episode data — add new episodes at the TOP of this list ===== */
+const A = "https://podcasts.apple.com/us/podcast/";
+const EPISODES = [
+  {n:19,date:"2025-02-08",len:"2h 34m",tag:"Earth",topic:"Pleistocene Ecology",guest:"John Moretti",
+   blurb:"A UT Austin PhD student who goes deep into caves to study ancient animals of the Pleistocene and Holocene: paleontology, the ethics of reviving mammoths, ancient North American ecosystems, and cave diving.",
+   apple:A+"pleistocene-ecology-dr-john-moretti/id1717825318?i=1000690438914",spotify:"https://open.spotify.com/episode/0REvbDj6LpEkOq13kIf2CZ",yt:"Vu8jozAXkF4"},
+  {n:18,date:"2024-10-11",len:"2h 32m",tag:"Space",topic:"Dark Matter & Cosmology",guest:"Dr. Michael Boylan-Kolchin",
+   blurb:"How galaxies formed, what leftover cosmic radiation tells us, and the roles of dark matter and dark energy, with a UT Austin cosmologist.",
+   apple:A+"dark-matter-cosmology-dr-michael-boylan-kolchin/id1717825318?i=1000672736877"},
+  {n:17,date:"2024-09-09",len:"2h 17m",tag:"Earth",topic:"Magma & Lava",guest:"Dr. Alan Whittington",
+   blurb:"Heat and mass transfer and the rheology of melts at extreme temperatures and pressures, from Tolbachik to Europan cryolava and lunar regolith bricks. Director of UTSA's HAMsTER Lab.",
+   apple:A+"magma-lava-dr-alan-whittington/id1717825318?i=1000668825897"},
+  {n:16,date:"2024-08-31",len:"1h 23m",tag:"Space",topic:"Jovian Geodynamo",guest:"Dr. Krista Soderlund",
+   blurb:"Metallic hydrogen and helium rain beneath Jupiter's clouds, sideways convection in Europa's sub-ice ocean, and the Europa Clipper mission.",
+   apple:A+"jovian-geodynamo-dr-krista-soderlund/id1717825318?i=1000667927092"},
+  {n:15,date:"2024-08-23",len:"1h 56m",tag:"Ice & Ocean",topic:"Polar Geophysics",guest:"Dr. Shuai Yan 闫帅",
+   blurb:"Antarctic fieldwork, subglacial lakes and hydrology, aerogeophysics, and how radar lets us “x-ray” ice sheets, plus thoughts on human nature and science outreach.",
+   apple:A+"polar-geophysics-dr-shuai-yan-%E9%97%AB%E5%B8%85/id1717825318?i=1000666348063"},
+  {n:14,date:"2024-08-10",len:"52m",tag:"Computing & AI",topic:"Supercomputers & AI",guest:"Dr. Dan Stanzione",
+   blurb:"The director of the Texas Advanced Computing Center on building Frontera, Lonestar 6 and Horizon, large language models, and the politics of research.",
+   apple:A+"supercomputers-ai-dr-dan-stanzione/id1717825318?i=1000665193681"},
+  {n:13,date:"2024-08-07",len:"2h 3m",tag:"Computing & AI",topic:"Quantum Materials Engineering",guest:"Dr. Bruno Cucco",
+   blurb:"Simulating perovskites and other optoelectronic materials from first principles, and why it matters for solar power and LEDs.",
+   apple:A+"quantum-materials-engineering-dr-bruno-cucco/id1717825318?i=1000665193709"},
+  {n:12,date:"2024-07-19",len:"1h 31m",tag:"Ice & Ocean",topic:"Ice Sheet Evolution",guest:"Dr. Ben Keisling",
+   blurb:"A glaciologist and ice-sheet modeler on how ice sheets change, sea-level rise, climate, and isostatic rebound.",
+   apple:A+"ice-sheet-evolution-dr-ben-keisling/id1717825318?i=1000665193598"},
+  {n:11,date:"2024-07-08",len:"2h 5m",tag:"Ice & Ocean",topic:"Arctic Oceanography",guest:"Dr. Kirstin “Kiki” Schulz",
+   blurb:"Sea ice, polar bears, and internal-wave dynamics with a computational scientist and physical oceanographer.",
+   apple:A+"arctic-oceanography-dr-kirstin-kiki-schulz/id1717825318?i=1000665193599"},
+  {n:10,date:"2024-07-02",len:"2h 1m",tag:"Computing & AI",topic:"AI for Research & Entrepreneurship",guest:"Ayush Garg",
+   blurb:"The co-founder of AnswerThis on building an AI tool over 250 million research papers, and starting a company as a student.",
+   apple:A+"ayush-garg-answerthis/id1717825318?i=1000665193557"},
+  {n:9,date:"2024-06-11",len:"1h 47m",tag:"Space",topic:"Colliding Black Holes & Gravity Waves",guest:"Dr. Deirdre Shoemaker",
+   blurb:"An award-winning gravitational physicist on black-hole mergers, gravitational waves, and her part in their groundbreaking detection.",
+   apple:A+"colliding-black-holes-gravity-waves-dr-deirdre-shoemaker/id1717825318?i=1000665193710"},
+  {n:8,date:"2024-03-19",len:"1h 52m",tag:"Earth",topic:"Subsurface Fluids & Croatia",guest:"Dr. Maša Prodanović",
+   blurb:"A Croatian-born applied mathematician and petroleum engineering professor on modeling fluid flow through porous rock.",
+   apple:A+"subsurface-fluids-croatia-dr-dr-ma%C5%A1a-prodanovi%C4%87/id1717825318?i=1000665193750"},
+  {n:7,date:"2024-03-03",len:"1h 41m",tag:"Space",topic:"Planetary Geophysics",guest:"Dr. Douglas Hemingway",
+   blurb:"A planetary geophysicist and robotics/systems engineer on the geology of other worlds.",
+   apple:A+"planetary-geophysics-dr-douglas-hemingway/id1717825318?i=1000665193628"},
+  {n:6,date:"2024-02-05",len:"1h 34m",tag:"Mindset",topic:"Hosting Podcasts",guest:"Pascal (Everything Goes Podcast)",
+   blurb:"Lessons from a full-time podcaster on building a show and an audience.",
+   apple:A+"pascal-hosting-podcasts/id1717825318?i=1000665193722"},
+  {n:5,date:"2024-01-24",len:"1h 41m",tag:"Computing & AI",topic:"AI & Self-Driving Vehicles",guest:"Shubham Pandey",
+   blurb:"A data engineer and machine-learning expert on perception in self-driving cars and ML in finance and advertising.",
+   apple:A+"ai-self-driving-vehicles-shubham-pandey/id1717825318?i=1000665193682"},
+  {n:4,date:"2024-01-16",len:"2h 7m",tag:"Mindset",topic:"Building an Unstoppable Mindset",guest:"Chip Baker",
+   blurb:"Best-selling author, speaker, educator and (once) Jason's football coach on mindset and success.",
+   apple:A+"chip-baker-building-an-unstoppable-mindset-for-success/id1717825318?i=1000665193447"},
+  {n:3,date:"2023-12-20",len:"1h 32m",tag:"Earth",topic:"The Secrets of Iceland's Volcanoes",guest:"Dr. Edward Marshall",
+   blurb:"An isotope geochemist and igneous petrologist at the University of Iceland on the island's frequent, intense eruptions.",
+   apple:A+"dr-edward-marshall-the-secrets-of-icelands-volcanoes/id1717825318?i=1000665193751"},
+  {n:2,date:"2023-12-06",len:"1h 0m",tag:"Mindset",topic:"Becoming a Better Version of Yourself",guest:"Cole Hastings",
+   blurb:"A self-improvement YouTuber, life coach, author and filmmaker on personal growth.",
+   apple:A+"cole-hastings-how-to-become-a-better-version-of-yourself/id1717825318?i=1000665193558"},
+  {n:1,date:"2023-11-15",len:"2h 8m",tag:"Computing & AI",topic:"Stats, Oil & AI",guest:"Dr. Michael Pyrcz",
+   blurb:"The first episode: a data scientist and geologist on geostatistics, machine learning, and reservoir modeling.",
+   apple:A+"stats-oil-and-ai-a-conversation-on-the-cutting/id1717825318?i=1000665193723"}
+];
+
+const list=document.getElementById('ep-list'), search=document.querySelector('.search');
+let tag='All';
+const fmt=d=>new Date(d+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});
+function render(){
+  const q=search.value.trim().toLowerCase();
+  const eps=EPISODES.filter(e=>(tag==='All'||e.tag===tag)&&(!q||(e.topic+e.guest+e.blurb).toLowerCase().includes(q)));
+  list.innerHTML=eps.map(e=>`<li class="ep">
+    <span class="ep-num">${String(e.n).padStart(2,'0')}</span>
+    <div><p class="ep-meta">${fmt(e.date)} · ${e.len} · <span class="tag">${e.tag}</span></p>
+      <h3>${e.topic}<small>with ${e.guest}</small></h3><p>${e.blurb}</p></div>
+    <div class="ep-links">
+      ${e.yt?`<a href="https://www.youtube.com/watch?v=${e.yt}" target="_blank" rel="noopener">YouTube</a>`:''}
+      ${e.spotify?`<a href="${e.spotify}" target="_blank" rel="noopener">Spotify</a>`:''}
+      <a href="${e.apple}" target="_blank" rel="noopener">Apple</a>
+    </div></li>`).join('') || '<li class="empty">No episodes match that search.</li>';
+}
+document.querySelectorAll('.filters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed','false'));
+  b.setAttribute('aria-pressed','true');tag=b.dataset.tag;render();
+}));
+search.addEventListener('input',render);
+render();
+
+/* click-to-load YouTube (no tracking until played) */
+document.querySelector('#latest button').addEventListener('click',function(){
+  this.parentElement.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/Vu8jozAXkF4?autoplay=1" title="Pleistocene Ecology | John Moretti" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>';
+});
+
+/* mobile menu */
+const mb=document.querySelector('.menu-btn'),menu=document.getElementById('menu');
+mb.addEventListener('click',()=>{const o=menu.classList.toggle('open');mb.setAttribute('aria-expanded',o)});
+menu.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
