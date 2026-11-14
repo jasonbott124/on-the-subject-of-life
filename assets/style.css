@@ -179,3 +179,4 @@ footer nav{display:flex;gap:18px}
 .dots button{width:9px;height:9px;border-radius:50%;border:0;background:var(--line-dark);cursor:pointer;padding:0}
 .dots button[aria-selected=true]{background:var(--moss)}
 @media (max-width:900px){.feature,.host-grid{grid-template-columns:1fr}.feature-text{padding:26px}}
+.about-text p.standard{border-left:2px solid var(--moss);padding-left:18px;color:#eef1ea}
